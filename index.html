@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Guess me</title>
+</head>
+
+<body>
+
+    <header class="text-center bg-light p-3">
+        <img src="img/layout/logo.png" />
+        <h1 class="p-2">Guess Who</h1>
+    </header>
+
+    <div class="container text-center">
+
+        <section class="quest m-lg-1 text-center" style="display: none">
+            <h2 class="p-3 "></h2>
+            <button class="btn btn-yes btn-success m-lg-5 btn-lg ">Yes</button>
+            <button class="btn btn-no btn-danger m-lg-5 btn-lg ">No</button>
+        </section>
+
+        <div class="win mt-2" style="display: none">
+            <h2>Yes, I knew it!</h2>
+            <button class=" btn btn-outline-warning mt-5 btn-lg play-again">Play Again</button>
+        </div>
+
+        <section class="game-start mt-5 ">
+            <h2>Think of Someone...</h2>
+            <button type="button" class="btn-start btn btn-outline-warning mt-5 btn-lg ">I'm Ready!</button>
+        </section>
+
+        <section class="new-quest mt-1 p-1" style="display: none ">
+            <h4>I gave up, Teach me!</h4>
+
+            <form class="ending-form m-1 ">
+                <div class="form-floating mb-3 ">
+                    <input name="NewGuess" type="text" class="form-control" id="newGuess" required>
+                    <label for="newGuess ">Your Guess</label>
+                </div>
+                <div class="form-floating ">
+                    <input name="newQuest" type="text" class="form-control" id="newQuest" required>
+                    <label for="newQuest ">Your Question</label>
+                </div>
+                <button type="submit " class="btn btn-add-guess btn-outline-warning mt-2 btn-lg ">Make me Smarter!</button>
+            </form>
+        </section>
+
+    </div>
+
+    <div class="position-absolute bottom-0 text-center bg-dark text-light w-100 p-1 mt-5">GuessWho &copy; 2021</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+    <script src="lib/jquery/jquery.js "></script>
+    <script src="js/storage-service.js "></script>
+    <script src="js/quest-service.js "></script>
+    <script src="js/quest-controller.js "></script>
+
+</body>
+
+</html>
